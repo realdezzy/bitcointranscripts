@@ -18,7 +18,7 @@ Rusty Russell: 00:00:00
 Simplicity is a virtue in itself, right?
 So you can try to increase fairness.
 If you reduce simplicity, you end up actually often stepping backwards.
-The thing that really appeals about element symmetry is it's simple.
+The thing that really appeals about LN symmetry is it's simple.
 And every scheme to fix things by introducing more fairness and try to reintroduce penalties and everything else ends up destroying the simplicity.
 
 Speaker 1: 00:00:27
@@ -102,7 +102,7 @@ And there are a couple of things that I think we really need to make sure we kee
 But I think robustness and privacy are the two things that are rarely actually on fire, but are always important.
 And they're both areas where we can definitely make incremental improvements, and I think we should.
 Privacy in particular is something that everyone cares about until you need to put the engineering effort in and there's other stuff.
-There's bugs, there's issues, there's, there are always other things that are more urgent, even if they're not more important.
+There's bugs, there's issues, there are always other things that are more urgent, even if they're not more important.
 And so I definitely try to keep the perspective of going, if not now, when?
 And I think, you know, privacy is something that we definitely need to put more effort in.
 
@@ -218,7 +218,7 @@ Yes.
 But on the simple protocol level, you go, well, you didn't lose anything.
 But on a higher level, I'm not going to trust you again because you're obviously doing weird because they restored from backup.
 But you know, if you start doing this a lot, people are gonna be like, no, no, I don't trust them anymore.
-So, so if the potential benefit for you is so small, that that social convention that that, if I want to become a big node, I'm not going to get there because I people have noticed that I keep double spending because it's really clear on chain.
+So, if the potential benefit for you is so small, that social convention that if I want to become a big node, I'm not going to get there because people have noticed that I keep double spending because it's really clear on chain.
 
 Speaker 2: 00:07:47
 
@@ -237,7 +237,7 @@ Rusty Russell:
 
 You want to do a mutual close.
 So the only case where it really comes out is when I'm unavailable you can't do mutual close.
-You're going to use the last three close anyway and now you're like well I might as well try to cheat.
+You're going to use the unilateral close anyway and now you're like well I might as well try to cheat.
 So you're already kind of in a corner case because that's already sending more money than if you just spoke to me and closed your channel.
 
 Speaker 1: 00:08:16
@@ -328,7 +328,7 @@ It is theoretically slightly higher latency in the case where we both want to ma
 But in practice, while that adds some latency in that corner case, it also gives you more opportunities for batching.
 So if you're really being hammered in both ways, you don't lose.
 Right?
-The latency of individual payments may go up, but the latency of the whole system is better because we end up just you end up doing five commitments at once because you've been waiting.
+The latency of individual payments may go up, but the latency of the whole system is better because we end up doing five commitments at once because you've been waiting.
 So with that in mind, I think simplifying the pure level protocol can help us somewhat.
 And in fact, that simplification is a subset of the current state machine, in fact, so it turns out to be pretty nice.
 And once we've got that, we have then the ability to knack changes.
@@ -398,7 +398,7 @@ AJ would definitely be the person unfortunately he's not here in New York he's k
 So I'm hoping that while we're in New York he is in his mountain lair somewhere coming up with a scheme to activate any prep out.
 That's if you're listening, AJ, I hope you're going to make that prophecy come true.
 I think, we understand that we want this and we've wanted it for a fair period of time and nothing else has come up that's gone, oh no, we want this instead.
-Any prep out by itself is a fairly simple piece.
+`ANYPREVOUT` by itself is a fairly simple piece.
 
 Speaker 2: 00:18:21
 
@@ -432,9 +432,9 @@ Yeah, I believe it's live in inquisition already.
 Rusty Russell: 00:19:11
 
 Yeah, exactly.
-So, you know, I think we're, we're well on the way to getting that.
-Now, just to set expectations correctly, even if we saw for tomorrow and it activated the week after, there's a leer latency involved here, right?
-We still need to then go through and implement it, roll it out, it gets it gets spec'd out, it gets, packed together, then it gets, then we ratify it, We get two different independent implementations both to implement it and interoperate and make sure that works.
+So, you know, I think we're well on the way to getting that.
+Now, just to set expectations correctly, even if we saw for tomorrow and it activated the week after, there's a layer latency involved here, right?
+We still need to then go through and implement it, roll it out,it gets spec'd out, it gets, packed together, then we ratify it, We get two different independent implementations both to implement it and interoperate and make sure that works.
 Then it's spec final.
 Then everyone else can go ahead and implement it.
 Then it can roll out on the network.
@@ -515,7 +515,7 @@ Rusty Russell: 00:22:45
 
 So that is a very good philosophical question.
 And hey, I work for a startup, right?
-And you should always be thinking what happens if my startup collapses because almost by definition right that's the the endgame for most startups is like they fail right and so when you have an open source project and you're like well I'm running this what what happens what happens after this to some extent the answer is, I'm gonna keep working on this whatever happens unfortunately my wife has given explicit approval for me to take some time off and work.
+And you should always be thinking what happens if my startup collapses because almost by definition right that's the the endgame for most startups is like they fail right and so when you have an open source project and you're like well I'm running this what happens, what happens after this to some extent the answer is, I'm gonna keep working on this whatever happens unfortunately my wife has given explicit approval for me to take some time off and work.
 Should all of us fail?
 We've had this discussion, right?
 She's been like, cool, that's okay.
@@ -546,9 +546,9 @@ And so those dynamics just don't seem to add up to a long term thinking and long
 Rusty Russell: 00:24:21
 
 So the piece that you're missing here is the pi is still growing, right?
-And so there is more emphasis on growing that pie and doing those bold new things because the world is still in front of us right light network as it is in 10 years time is much bigger than light network today with that assumption how do you lead how do you become the one everyone wants to be and the answer is you do the cool new things.
+And so there is more emphasis on growing that pie and doing those bold new things because the world is still in front of us right lightning network as it is in 10 years time is much bigger than lightning network today with that assumption how do you lead how do you become the one everyone wants to be and the answer is you do the cool new things.
 And that's not so much features.
-It is that focus on the next, basically the light in 2.0. What are the cool new things coming down the pi?
+It is that focus on the next, basically the lightning 2.0. What are the cool new things coming down the pi?
 Is it L2?
 Is it LN symmetry?
 Have you already got those, right?
@@ -601,7 +601,7 @@ Rusty Russell: 00:26:21
 So there's certainly other implementations to come up.
 And I actually expect to some extent that LN symmetry may open some new opportunities because people go, actually, I can implement that now.
 That is a serious subset.
-If I just implement that, maybe I've got an advantage over the others who have legacy they've got to still handle whereas I can just have a clean implementation that just does this new thing so we're gonna see these, these new kids coming up with their, I don't know Kotlin implementation I've heard of those I know some some some some of them one of those languages, you're like you implemented in what I've heard of that kind of thing.
+If I just implement that, maybe I've got an advantage over the others who have legacy they've got to still handle whereas I can just have a clean implementation that just does this new thing so we're gonna see these, these new kids coming up with their, I don't know Kotlin implementation, I've heard of those. I know one of those languages, you're like you implemented in what I've heard of that kind of thing.
 That may be the next thing.
 And that's exciting for me.
 I think, that brings, new blood, just a new design space, a new point of view to the implementations, and that's always great.
@@ -640,7 +640,7 @@ You artificially restrict their capacity by some amount, in the case where your 
 So it doesn't actually make a difference in a lot of cases, because for most implementations, you set the maximum HTLC size that they can go through to, say, 10% of your channel capacity anyway.
 So as long as you've got more than 10%, they can't tell.
 They literally cannot tell.
-When you're under 10, the question is like when you're on the boundary you can you can start probing and so at that point you start the Oakland protocol and well, we're going to actually let you use slightly less capacity than we actually have because we don't want to leak that we didn't send the HTLC out through there.
+When you're under 10, the question is like when you're on the boundary you can start probing and so at that point you start the Oakland protocol and well, we're going to actually let you use slightly less capacity than we actually have because we don't want to leak that we didn't send the HTLC out through there.
 
 Speaker 1: 00:28:34
 
@@ -650,13 +650,13 @@ Rusty Russell: 00:28:45
 
 Exactly.
 So you can do it with multiple probes, but the Oakland protocol basically restricts it because it gives you a fixed point where you go.
-And some implementations actually restrict the total HLC in flight.
+And some implementations actually restrict the total HTLC in flight.
 So you have another thing that they can't basically exhaust the whole channel.
 So there's that, there's low-hanging fruit like that.
 There's splicing, which just messes up your graph a little bit, so it makes it harder to...
 Dual funding particularly allows you to combine multiple things into one transaction, just the common ownership heuristics starts to break down.
 This is useful.
-There's a whole pile of different fun things you can do once you've got splicing and you can splice in and out and everything else. And just mess people up which is kind of nice Particularly if we start to see things like page join of things coming out of splices and really really kind of a lot more So once your Lightning channel is also used for unchain things through splicing, I think it becomes a lot more complicated to see exactly what's going on, which is just a nice low-hanging fruit that we're going to get.
+There's a whole pile of different fun things you can do once you've got splicing and you can splice in and out and everything else. And just mess people up which is kind of nice Particularly if we start to see things like Payjoin of things coming out of splices and really really kind of a lot more So once your Lightning channel is also used for onchain things through splicing, I think it becomes a lot more complicated to see exactly what's going on, which is just a nice low-hanging fruit that we're going to get.
 
 Speaker 1: 00:29:40
 
@@ -719,7 +719,7 @@ Robustness for fees folks.
 Rusty Russell: 00:31:36
 
 So yeah, so part of the problem at the moment is that you basically have to agree on what fee you're going to pay.
-Now there's there's now only one side pays fees.
+Now only one side pays fees.
 It's the person who originally proposed it.
 And they're the only one who can propose fee changes.
 But fees are also charged on second stage HTLC transactions.
@@ -746,7 +746,7 @@ The answer is that basically you shouldn't let the min fee drop over some period
 You just go, we're going to ratchet it up to a certain amount.
 And then if it's been there for an hour and we're still getting, okay, then we start to let it down.
 This is a workaround for that.
-There's another issue that the Eclair people spotted that I think actually Bastien spotted, which is where you go on chain, you go to redeem an HLC, you go, it's actually not worth me paying the fee that would be involved to redeem this because fees are high, whatever else, so I'm not going to, you still have to close it upstream at that point.
+There's another issue that the Eclair people spotted that I think actually Bastien spotted, which is where you go on chain, you go to redeem an HTLC, you go, it's actually not worth me paying the fee that would be involved to redeem this because fees are high, whatever else, so I'm not going to, you still have to close it upstream at that point.
 Normally you'd wait till it spans and then you go, whatever, but if you're not going to spend or you're not going to push paying a fee to force it through, you now need to make the call to fail it upstream.
 You're at risk at that point because you could lose the HTLC, but you've already decided to write that money off because it's not worth.
 But if you don't close it upstream, upstream then closes on you because you've left this HTLC and clock's ticking.
@@ -1020,9 +1020,9 @@ Speaker 1: 00:44:43
 
 It didn't.
 I must admit, like on Stacker News, when I want to tip a post, and the little lightning zooms across the screen when I tip.
-It's just like I started Lightning wallet, but I put in a few thousand sets and I got some tips back, bigger account number now.
+It's just like I started Lightning wallet, but I put in a few thousand sats and I got some tips back, bigger account number now.
 It's neat.
-If I ever want to get those sets back, I can just pull them back to my Lightning wallet.
+If I ever want to get those sats back, I can just pull them back to my Lightning wallet.
 It's pretty neat.
 
 Rusty Russell: 00:45:08
